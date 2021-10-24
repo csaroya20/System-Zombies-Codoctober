@@ -1,1 +1,1 @@
-<img src="E Learning.gif" height="400" width="800>
+<img src="E Learning.gif" height="400" width="800">
