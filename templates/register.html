@@ -1,0 +1,75 @@
+{%extends "base.html"%}
+
+{%load static%}
+{%block content%}
+
+<!-- ======= Regsiter Section ======= -->
+   <section id="login" class="login">
+
+      <div class="container" data-aos="fade-up">
+<br><br>
+        <header class="section-header">
+          <p>Register</p>
+        </header>
+
+        <div class="row gy-12">
+
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <form action='/register/' method="post" >{% csrf_token %}
+              <div class="row gy-2">
+
+                <div class="col-md-12">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="username" class="form-control" name="username" placeholder="Username" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="number" class="form-control" name="number" placeholder="Your Phone number" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="password" class="form-control" name="passowrd1" placeholder="Enter password" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="password" class="form-control" name="password2" placeholder="Confirm Password" required>
+                </div>
+                
+                <div class="col-auto text-center">
+                  <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+          <div class="col-md-4"></div>
+
+        </div>
+ 
+        <div class="row gy-12">
+
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            {%for message in messages%}
+              <h3>{{message}}</h3>
+            {%endfor%}
+          </div>
+          <div class="col-md-4"></div>
+
+        </div>
+ 
+
+      </div>
+
+    </section><!-- End Regsiter Section -->
+
+{%endblock %}

@@ -1,0 +1,59 @@
+{%extends "base.html"%}
+
+{%load static%}
+{%block content%}
+
+<!-- ======= Login Section ======= -->
+    <section id="login" class="login">
+
+      <div class="container" data-aos="fade-up">
+<br><br>
+        <header class="section-header">
+          <p>Login</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <form action='/' method="post" >{% csrf_token %}
+              <div class="row gy-4">
+
+                <div class="col-md-12">
+                  <input type="text" name="name" class="form-control" placeholder="Username" required>
+                </div>
+
+                <div class="col-md-12">
+                  <input type="password" class="form-control" name="password" placeholder="Password" required>
+                </div>
+
+                <div class="col-auto text-center">
+                  <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+          <div class="col-md-4"></div>
+
+        </div>
+
+
+        <div class="row gy-12">
+
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            {%for message in messages%}
+              <h3>{{message}}</h3>
+            {%endfor%}
+          </div>
+          <div class="col-md-4"></div>
+
+        </div>
+ 
+      </div>
+
+    </section><!-- End Login Section -->
+
+{%endblock %}

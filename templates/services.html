@@ -1,0 +1,113 @@
+{%extends "base.html"%}
+
+{%load static%}
+{%block content%}
+
+<!-- ======= Services Section ======= -->
+<section id="services" class="services">
+
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header">
+      <p>What we provide here?</p>
+    </header>
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-box blue">
+          <img src="{%static 'img/.jpg'%}" alt="" height=300px>
+          <h3>Array</h3>
+          <p>An array is a data structure that contains a group of elements. Typically these elements are
+            all of the same data type, such as an integer or string. Arrays are commonly used in computer programs
+            to organize data so that a related set of values can be easily sorted or searched</p>
+          <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-box orange">
+          <img src="{%static 'img/.jpg'%}" alt="" height=300px>
+          <h3>Linked List</h3>
+          <p> A linked list is a linear collection of data elements whose order is not given by their physical placement
+            in
+            memory. Instead, each element points to the next. It is a data structure consisting of a collection
+            of nodes which together represent a sequence</p>
+          <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-box green">
+          <img src="{%static 'img/.jpg'%}" alt="" height=300px>
+          <h3>Stack</h3>
+          <p> A stack is an abstract data type that serves as a collection of elements, with two main principal
+            operations: Push, which adds an element to the collection,
+            and Pop, which removes the most recently added element that was not yet removed</p>
+          <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-box blue">
+          <img src="{%static 'img/.jpg'%}" alt="" height=300px>
+          <h3>Queue</h3>
+          <p> A queue is a collection of entities that are maintained in a sequence and can be modified by the addition of
+            entities
+            at one end of the sequence and the removal of entities from the other end of the sequence</p>
+          <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-box orange">
+          <img src="{%static 'img/.jpg'%}" alt="" height=300px>
+          <h3>Dynamic Programming</h3>
+          <p> Dynamic Programming is mainly an optimization over plain recursion. Wherever we see a recursive solution that
+            has repeated calls for same inputs, we can optimize it using Dynamic Programming. The idea is to simply store
+            the results of subproblems, so that we do
+            not have to re-compute them when needed later. This simple optimization reduces time complexities from
+            exponential to polynomial</p>
+          <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-box green">
+          <img src="{%static 'img/.jpg'%}" alt="" height=300px>
+          <h3>Tree</h3>
+          <p> A tree is a hierarchical data structure defined as a collection of nodes. Nodes represent value and nodes are
+            connected by edges.The tree has one node called root. The tree
+            originates from this, and hence it does not have any parent. Each node has one parent only but can have multiple
+            children</p>
+          <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-box blue">
+          <img src="{%static 'img/.jpg'%}" alt="" height=300px>
+          <h3>Graph</h3>
+          <p> A Graph is a non-linear data structure consisting of nodes and edges.
+            The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes
+            in the graph. Graphs are used to represent networks.
+            The networks may include paths in a city or telephone network or circuit network</p>
+          <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </div>  
+</section><!-- End Services Section -->
+
+
+
+{%endblock %}
